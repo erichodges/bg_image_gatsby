@@ -6,10 +6,11 @@ import Img from 'gatsby-image'
 import BackgroundImage from 'gatsby-background-image'
 import { generateMedia } from 'styled-media-query'
 
-const media = generateMedia();
+const media = generateMedia()
 
 const BackgroundSection = ({ className, children }) => (
-    <StaticQuery query={graphql`
+  <StaticQuery
+    query={graphql`
       query {
         desktop: file(relativePath: { eq: "seamless-bg-desktop.jpg" }) {
           childImageSharp {
@@ -20,25 +21,25 @@ const BackgroundSection = ({ className, children }) => (
         }
       }
     `}
-     render={data => {
-       // Set ImageData.
-       const imageData = data.desktop.childImageSharp.fluid
-       return (
-           <StyledWrapper>
-             <BackgroundImage Tag="section"
-                              className={className}
-                              fluid={imageData}
-                              backgroundColor={`#040e18`}
-                              classId="gbi"
-             >
-               {children}
-             </BackgroundImage>
-             <StyledWelcomeImage fluid={imageData} />
-           </StyledWrapper>
-       )
-     }
-     }
-    />
+    render={data => {
+      // Set ImageData.
+      const imageData = data.desktop.childImageSharp.fluid
+      return (
+        <StyledWrapper>
+          <BackgroundImage
+            Tag="section"
+            className={className}
+            fluid={imageData}
+            backgroundColor={`#040e18`}
+            classId="gbi"
+          >
+            {children}
+          </BackgroundImage>
+          <StyledWelcomeImage fluid={imageData} />
+        </StyledWrapper>
+      )
+    }}
+  />
 )
 
 const StyledWelcomeImage = styled(Img)`
@@ -47,11 +48,11 @@ const StyledWelcomeImage = styled(Img)`
 `
 
 const StyledBackgroundSection = styled(BackgroundSection)`
-  width: 50%;
+  width: 100%;
   background-repeat: repeat-y;
   
   // With media-queries you sadly still have to use !important, for the moment.
-  // ${media.lessThan("large")`
+  // ${media.lessThan('large')`
   //   background-size: contain !important;
   //   &:after, &:before {
   //     background-size: contain !important;
@@ -64,7 +65,7 @@ const StyledWrapper = styled.div`
   height: 100vh;
   display: flex;
 
-  // This is an example how to target the pseudo-elements:  
+  // This is an example how to target the pseudo-elements:
   //.gatsby-background-image-gbi:after, .gatsby-background-image-gbi:before {
   //  background-position: top right;
   //}
