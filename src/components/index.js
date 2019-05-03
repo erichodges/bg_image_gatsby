@@ -35,17 +35,11 @@ const BackgroundSection = ({ className, children }) => (
           >
             {children}
           </BackgroundImage>
-          <StyledWelcomeImage fluid={imageData} />
         </StyledWrapper>
       )
     }}
   />
 )
-
-const StyledWelcomeImage = styled(Img)`
-  width: 50%;
-  height: auto;
-`
 
 const StyledBackgroundSection = styled(BackgroundSection)`
   width: 100%;
