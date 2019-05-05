@@ -43,15 +43,6 @@ const BackgroundSection = ({ className, children }) => (
 
 const StyledBackgroundSection = styled(BackgroundSection)`
   width: 100%;
-  background-repeat: repeat-y;
-  
-  // With media-queries you sadly still have to use !important, for the moment.
-  // ${media.lessThan('large')`
-  //   background-size: contain !important;
-  //   &:after, &:before {
-  //     background-size: contain !important;
-  //   }
-  // `}
 `
 
 const StyledWrapper = styled.div`
