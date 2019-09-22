@@ -1,10 +1,9 @@
-import React from 'react'
-import { graphql, StaticQuery } from 'gatsby'
-import styled from 'styled-components'
-import Img from 'gatsby-image'
+import { graphql, StaticQuery } from 'gatsby';
+import BackgroundImage from 'gatsby-background-image';
+import React from 'react';
+import styled from 'styled-components';
+import { generateMedia } from 'styled-media-query';
 
-import BackgroundImage from 'gatsby-background-image'
-import { generateMedia } from 'styled-media-query'
 
 const media = generateMedia()
 
@@ -12,7 +11,7 @@ const BackgroundSection = ({ className, children }) => (
   <StaticQuery
     query={graphql`
       query {
-        desktop: file(relativePath: { eq: "seamless-bg-desktop.jpg" }) {
+        desktop: file(relativePath: { eq: "lotus.png" }) {
           childImageSharp {
             fluid(quality: 100, maxWidth: 4160) {
               ...GatsbyImageSharpFluid_withWebp
