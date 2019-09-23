@@ -41,7 +41,8 @@ const BackgroundSection = ({ className, children }) => (
 )
 
 const StyledBackgroundSection = styled(BackgroundSection)`
-  width: 100%;
+  width: 100vw;
+  height: 100vh;
 `
 
 const StyledWrapper = styled.div`
