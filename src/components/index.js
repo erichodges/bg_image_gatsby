@@ -31,6 +31,14 @@ const BackgroundSection = ({ className, children }) => (
             fluid={imageData}
             backgroundColor={`#040e18`}
             classId="gbi"
+            style={{
+              position: "absolute",
+              objectPosition: "5% 80%",
+              backgroundRepeat: "no-repeat",
+              objectFit: "cover",
+              minHeight: "100vh",
+              width: "100vw"
+            }}
           >
             {children}
           </BackgroundImage>
@@ -41,15 +49,14 @@ const BackgroundSection = ({ className, children }) => (
 )
 
 const StyledBackgroundSection = styled(BackgroundSection)`
-  width: 100vw;
-  height: 100vh;
+  
 `
 
 const StyledWrapper = styled.div`
-  width: 100%;
+  width: 100vw;
   height: 100vh;
   display: flex;
-
+  
   // This is an example how to target the pseudo-elements:
   //.gatsby-background-image-gbi:after, .gatsby-background-image-gbi:before {
   //  background-position: top right;
