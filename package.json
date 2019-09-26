@@ -28,7 +28,8 @@
   },
   "resolutions": {
     "cache-base/**/set-value": "^2.0.1",
-    "cache-base": "^4.0.0"
+    "cache-base": "^4.0.0",
+    "mixin-deep": "^2.0.1"
   },
   "keywords": [
     "gatsby"
