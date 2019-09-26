@@ -29,7 +29,13 @@
   "resolutions": {
     "cache-base/**/set-value": "^2.0.1",
     "cache-base": "^4.0.0",
-    "mixin-deep": "^2.0.1"
+    "mixin-deep": "^2.0.1",
+    "anymatch": "^3.1.0",
+    "chokidar": "^3.1.1",
+    "micromatch": "^4.0.2",
+    "lodash.merge": "^4.6.2",
+    "react-hot-loader": "^4.12.14",
+    "lodash.template": "^4.5.0"
   },
   "keywords": [
     "gatsby"
