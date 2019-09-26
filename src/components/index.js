@@ -2,10 +2,9 @@ import { graphql, StaticQuery } from 'gatsby';
 import BackgroundImage from 'gatsby-background-image';
 import React from 'react';
 import styled from 'styled-components';
-import { generateMedia } from 'styled-media-query';
 
 
-const media = generateMedia()
+// const media = generateMedia()
 
 const BackgroundSection = ({ className, children }) => (
   <StaticQuery
