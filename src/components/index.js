@@ -32,7 +32,7 @@ const BackgroundSection = ({ className, children }) => (
             classId="gbi"
             style={{
               position: "absolute",
-              objectPosition: "5% 80%",
+              backgroundPosition: "0% 50%",
               backgroundRepeat: "no-repeat",
               objectFit: "cover",
               minHeight: "100vh",
