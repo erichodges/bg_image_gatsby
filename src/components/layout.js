@@ -1,9 +1,9 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import { StaticQuery, graphql } from 'gatsby'
+import { graphql, StaticQuery } from 'gatsby';
+import PropTypes from 'prop-types';
+import React from 'react';
+import StyledBackgroundSection from './index';
+import './layout.css';
 
-import './layout.css'
-import StyledBackgroundSection from './index'
 
 const Layout = ({ children }) => (
   <StaticQuery
@@ -39,11 +39,7 @@ const Layout = ({ children }) => (
             }}
           >
             {children}
-            <footer>
-              © {new Date().getFullYear()}, Built with
-              {` `}
-              <a href="https://www.gatsbyjs.org">Gatsby</a>
-            </footer>
+            
           </div>
         </div>
       </StyledBackgroundSection>

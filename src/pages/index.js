@@ -10,14 +10,14 @@ const IndexPage = () => (
   <section>
   <Layout>
     <SEO
-      title="gatsby-background-image test"
+      title="background image testing"
       keywords={[`gatsby`, `application`, `react`]}
     />
-    <h1>Hi people</h1>
+    <h1>Title Goes Here</h1>
     <p>
-      Welcome to the <code>gatsby-background-image</code> test site.
+      Marketing text goes here.
     </p>
-    <p>Now go build something great.</p>
+    <p>More marketing text here.</p>
     <div
       style={{ maxWidth: `300px`, margin: `0 auto`, marginBottom: `1.45rem` }}
     >      
